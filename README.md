@@ -5,7 +5,7 @@
 
 <div align="center">
 
-# README para uso em repositórios do GitHub</div>
+# Repositório contendo os dados da simulação de uma conta bancária dos exercícios do curso de kotlin da Digital House!</div>
 <div align="center">
 
   [Projeto](#-projeto) | 
