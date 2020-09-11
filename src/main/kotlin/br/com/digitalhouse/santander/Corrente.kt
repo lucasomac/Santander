@@ -30,14 +30,20 @@ class Corrente(saldo: BigDecimal, cliente: Cliente, var chequeEspecial: BigDecim
     }
 
     override fun depositar(valor: BigDecimal) {
-        if (utilizadoChequeEspecial == BigDecimal.valueOf(0.0)) {
-            this.saldo += valor
-        } else {
-            if (valor >= this.utilizadoChequeEspecial) {
-                this.saldo += valor - utilizadoChequeEspecial
-                this.utilizadoChequeEspecial = BigDecimal.valueOf(0.0)
-            } else {
-                this.utilizadoChequeEspecial -= valor
+        when (utilizadoChequeEspecial) {
+            BigDecimal.valueOf(0.0) -> {
+                this.saldo += valor
+            }
+            else -> {
+                when {
+                    valor >= this.utilizadoChequeEspecial -> {
+                        this.saldo += valor - utilizadoChequeEspecial
+                        this.utilizadoChequeEspecial = BigDecimal.valueOf(0.0)
+                    }
+                    else -> {
+                        this.utilizadoChequeEspecial -= valor
+                    }
+                }
             }
         }
     }
