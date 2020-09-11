@@ -5,7 +5,7 @@
 
 <div align="center">
 
-# Repositório contendo os dados da simulação de uma conta bancária dos exercícios do curso de kotlin da Digital House!</div>
+# Santander</div>
 <div align="center">
 
   [Projeto](#-projeto) | 
@@ -19,21 +19,18 @@
 <div align="center">
 
 [![Autor](https://img.shields.io/badge/autor-Lucas%20de%20Oliveira%20Macedo-920629?style=flat-square)](https://github.com/lucasomac)
-![Linguagens](https://img.shields.io/github/languages/count/lucasomac/readme?color=920629&style=flat-square)
-[![Stars](https://img.shields.io/github/stars/lucasomac/readme?color=920629&style=flat-square)](https://github.com/lucasomac/readme/stargazers)
-[![Forks](https://img.shields.io/github/forks/lucasomac/readme?color=920629&style=flat-square)](https://github.com/lucasomac/readme/network/members)
-![Tamanho do código em bytes](https://img.shields.io/github/repo-size/lucasomac/readme?color=920629&style=flat-square)
-[![Last commit](https://img.shields.io/github/last-commit/lucasomac/readme?color=920629&style=flat-square)](https://github.com/lucasomac/readme/commits/master)
-[![Downloads](https://img.shields.io/github/downloads/lucasomac/readme/total?color=920629&style=flat-square)](https://github.com/lucasomac/readme/releases)
+![Linguagens](https://img.shields.io/github/languages/count/lucasomac/Santander?color=920629&style=flat-square)
+[![Stars](https://img.shields.io/github/stars/lucasomac/Santander?color=920629&style=flat-square)](https://github.com/lucasomac/Santander/stargazers)
+[![Forks](https://img.shields.io/github/forks/lucasomac/Santander?color=920629&style=flat-square)](https://github.com/lucasomac/Santander/network/members)
+![Tamanho do código em bytes](https://img.shields.io/github/repo-size/lucasomac/Santander?color=920629&style=flat-square)
+[![Last commit](https://img.shields.io/github/last-commit/lucasomac/Santander?color=920629&style=flat-square)](https://github.com/lucasomac/Santander/commits/master)
+[![Downloads](https://img.shields.io/github/downloads/lucasomac/Santander/total?color=920629&style=flat-square)](https://github.com/lucasomac/Santander/releases)
 </div>
 
-<p align="center">
-  Template open-source, contribua você também 😃
-</p>
 
 ## 💻 Projeto
 
-Este projeto foi desenvolvido para servir de template para criação de repositórios no Github. Desta forma é possivel termos um README padrão e pré customizado para os nossos repositórios
+Repositório contendo os dados da simulação de uma conta bancária dos exercícios do curso de kotlin da Digital House!
 
 ## ⚙ Tecnologias
 
@@ -56,7 +53,7 @@ Esse projeto foi desenvolvido com o uso das seguintes ferramentas/IDE:
 - [DataGrip](https://www.jetbrains.com/pt-br/datagrip/)
 - [IntelliJIDEA](https://www.jetbrains.com/pt-br/idea/)
 
-## 🤔 Como contribuir {#contribuir}
+## 🤔 Como contribuir
 
 - Faça um fork desse repositório;
 - Cria uma branch com a sua feature: `git checkout -b minha-feature`;
@@ -70,7 +67,7 @@ Para executar esse projeto na sua máquina,
 clone no repositório:
 
 ```bash
-$ git clone https://github.com/lucasomac/readme.git
+$ git clone https://github.com/lucasomac/Santander.git
 ```
 #### ⚒ Back-End
 Run ```yarn install``` in the server folder;
