@@ -36,21 +36,12 @@ Repositório contendo os dados da simulação de uma conta bancária dos exercí
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [Node.js](https://nodejs.org/en/)
-- [React](https://reactjs.org)
-- [React Native](https://facebook.github.io/react-native/)
-- [Expo](https://expo.io/)
+- [Kotlin](https://kotlinlang.org/)
 
 ## ⛏ Ferramentas:
 
 Esse projeto foi desenvolvido com o uso das seguintes ferramentas/IDE:
 
-- [Visual Studio](https://visualstudio.microsoft.com/vs/)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Android Studio](https://developer.android.com/studio)
-- [WebStorm](https://www.jetbrains.com/pt-br/webstorm/)
-- [PyCharm](https://www.jetbrains.com/pt-br/pycharm/)
-- [DataGrip](https://www.jetbrains.com/pt-br/datagrip/)
 - [IntelliJIDEA](https://www.jetbrains.com/pt-br/idea/)
 
 ## 🤔 Como contribuir
@@ -63,25 +54,12 @@ Esse projeto foi desenvolvido com o uso das seguintes ferramentas/IDE:
 
 ## 🏁 Executar esse projeto:
 
-Para executar esse projeto na sua máquina,
-clone no repositório:
+Para executar esse projeto na sua máquina, clone no repositório:
 
 ```bash
 $ git clone https://github.com/lucasomac/Santander.git
 ```
-#### ⚒ Back-End
-Run ```yarn install``` in the server folder;
-Run ```yarn run server``` to up the server;
-Open Insomnia or Postman and import the Insomnia.json workspace file at backend folder.
-
-#### 🌐 Front-End
-Run ```yarn install``` in the web folder;
-Run ```yarn start``` to up the project;
-
-#### 📲 Mobile
-Run ```npm install``` in the mobile folder
-Update the baseURL at ```src/services/api.js```.
-Run ```expo start``` to up the project.
+E abra o IntelliJIDEA, clique em abrir projeto existente e execute o arquivo main.kt
 
 ## 📜 Licença:
 
