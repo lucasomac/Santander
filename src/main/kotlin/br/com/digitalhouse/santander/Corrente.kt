@@ -9,9 +9,9 @@ class Corrente(saldo: BigDecimal, cliente: Cliente, var chequeEspecial: BigDecim
         when {
             this.saldo + chequeEspecial - utilizadoChequeEspecial >= valor -> {
                 when {
-                    valor > this.saldo -> {
+                    valor >= this.saldo -> {
                         utilizadoChequeEspecial += valor - this.saldo
-                        this.saldo = 0
+                        this.saldo = BigDecimal.valueOf(0.0)
                     }
                     else -> {
                         this.saldo -= valor
@@ -26,17 +26,26 @@ class Corrente(saldo: BigDecimal, cliente: Cliente, var chequeEspecial: BigDecim
     }
 
     override fun consultarSaldo(): BigDecimal {
-        return super.consultarSaldo() + this.chequeEspecial - this.utilizadoChequeEspecial
+        return super.consultarSaldo() - this.utilizadoChequeEspecial
     }
 
-//    override fun depositar() {
-//
-//    }
+    override fun depositar(valor: BigDecimal) {
+        if (utilizadoChequeEspecial == BigDecimal.valueOf(0.0)) {
+            this.saldo += valor
+        } else {
+            if (valor >= this.utilizadoChequeEspecial) {
+                this.saldo += valor - utilizadoChequeEspecial
+                this.utilizadoChequeEspecial = BigDecimal.valueOf(0.0)
+            } else {
+                this.utilizadoChequeEspecial -= valor
+            }
+        }
+    }
 
     fun depositarCheque(cheque: Cheque) {
         when {
             Date() >= cheque.dataPagamento -> {
-                this.saldo += cheque.valor
+                this.depositar(cheque.valor)
             }
             else -> {
                 println("Cheque fora do período de compenssação")
